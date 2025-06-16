@@ -12,9 +12,6 @@ DEVICE_PATH := device/xiaomi/cas
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/cas.config
-
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := cas
 

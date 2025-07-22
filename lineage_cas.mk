@@ -14,6 +14,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from cas device
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
+# Camera
+$(call inherit-product-if-exists, device/xiaomi/camera/miuicamera.mk)
+
 # Build Flags
 TARGET_SCREEN_HEIGHT          := 2340
 TARGET_SCREEN_WIDTH           := 1080

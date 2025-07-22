@@ -14,6 +14,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from cas device
 $(call inherit-product, device/xiaomi/cas/device.mk)
 
+# Build Flags
+TARGET_SCREEN_HEIGHT          := 2340
+TARGET_SCREEN_WIDTH           := 1080
+TARGET_USES_MINI_GAPPS        := true
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+TARGET_HAS_UDFPS              := true
+TARGET_INCLUDE_ACCORD         := false
+BUILD_BCR                     := true
+
 PRODUCT_NAME := lineage_cas
 PRODUCT_DEVICE := cas
 PRODUCT_MANUFACTURER := Xiaomi
